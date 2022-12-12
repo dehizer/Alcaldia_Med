@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Quiero donar</title>
+</head>
+<body>
+
+    <!-- repetir barra de navegació, buscar la forma navbar.html-->  
+
+    <div class="container text-black text-center p-5">
+        <h1 class="p-5">¿Cómo puedes donar?</h1>
+        <div>
+            <h2 class="p-3">Opción 1: Puedes apadrinar</h2>
+            <p>Puedes generar una donación mensual automática a través de una tarjeta de crédito para ayudarnos mensualmente con los gastos que 
+            nos permiten que más mascotas puedan ser rescatadas de la calle. Puedes finalizar el aporte en cualquier momento en que lo desees.
+            Si querés ayudarnos, por favor hacé click en el siguiente botón:</p>
+            <a href=""></a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalapadrinar">
+                Quiero apadrinar
+              </button>
+        </div>      
+
+        <div>
+            <h2 class="p-5">Opción 2: Donación monetaria</h2>
+            <p>Puedes generar una donación única a través de consignación o transferencia bancaria para contribuir
+            a nuestra causa. Sólo lo haces por única vez y lo puedes hacer las veces quye quieras.
+            Si querés ayudarnos recibimos el dinero en la siguiente cuenta:</p>
+            
+            <p><strong>Cuenta bancaria: 00000000000</strong></p>
+            <p><strong>Tipo de cuenta: Ahorros</strong></p>
+            <p><strong>Banco: Banco Minero</strong></p>
+        </div>      
+
+        <div>
+            <h2 class="p-5">Opción 3: Puedes donar en especie</h2>
+            <p>Puedes generar donaciones materiales, cómo; alimentos para gatos y perros, elementos de aseo, elementos
+            de ropa, y cualquier implemento de utilidad para los animales.
+            Si nos quieres apoyar a través de esta modalidad puedes escribirnos al correo, déjanos tus datos de contacto
+            para pactar la entrega.
+            </p>
+            
+            <p><strong>refugiopatitas@gmail.com</strong></p>
+            
+        </div>      
+
+    </div>
+    
+        <!-- The Modal (El modal apadrinar)-->
+        <div class="modal fade" id="modalapadrinar">
+            <div class="modal-dialog">
+                <div class="modal-content">
+        
+                    <!-- Modal Header (encabezado del modal) -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Seleccione una tarjeta de crédito</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+            
+                    <!-- Modal body (contenido del modal)-->
+                    <div class="modal-body">
+                        <div class="container mt-3">
+                            <form action="#" class="was-validated">
+
+                                
+
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="visa" name="optradio" value="opcion1"  required>
+                                    <label class="form-check-label" for="visa">Visa</label>
+                                   
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="master" name="optradio" value="opcion2" required>
+                                    <label class="form-check-label" for="master">Mastercard</label>
+                                    
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="amex" name="optradio" value="opcion3" required >
+                                    <label class="form-check-label" for="amex">American Express</label>
+                                </div>
+
+                                    <div class="mb-3 mt-3">
+                                    <label for="tarjeta">Número de tarjeta:</label>
+                                    <input type="text" class="form-control" id="tarjeta" placeholder="ingrese el número de la tarjeta" name="tarjeta" required>
+                                    <div class="valid-feedback">Valido</div>
+                                    <div class="invalid-feedback">Por favor llenar este campo</div>
+                                </div>
+                                <div class="mb-3 mt-3">
+                                    <label for="nombre">Nombre del titular:</label>
+                                    <input type="text" class="form-control" id="nombre" placeholder="ingrese el nombre" name="nombre" required>
+                                    <div class="valid-feedback">Valido</div>
+                                    <div class="invalid-feedback">Por favor llenar este campo</div>
+                                </div>
+                                <div class="mb-3 mt-3">
+                                    <label for="documento">Documento:</label>
+                                    <input type="text" class="form-control" id="documento" placeholder="ingrese el documento" name="documento" required>
+                                    <div class="valid-feedback">Valido</div>
+                                    <div class="invalid-feedback">Por favor llenar este campo</div>
+                                </div>
+                                <div class="mb-3 mt-3">
+                                    <label for="fv">Fecha de vencimiento:</label>
+                                    <input type="text" class="form-control" id="fv" placeholder="mes/año mm/aa" name="fv" required>
+                                    <div class="valid-feedback">Valido</div>
+                                    <div class="invalid-feedback">Por favor llenar este campo</div>
+                                </div>
+                                <div class="mb-3 mt-3">
+                                    <label for="codigo">código seguridad:</label>
+                                    <input type="text" class="form-control" id="codigo" placeholder="ingrese el codigo cvc" name="codigo" required>
+                                    <div class="valid-feedback">Valido</div>
+                                    <div class="invalid-feedback">Por favor llenar este campo</div>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="tyc" name="tyc" value="tyc1" checked required>
+                                  
+                                    <label class="form-check-label" for="tyc">Aceptar términos y condiciones</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="susc" name="susc" value="susc" checked required>
+                                    
+                                    <label class="form-check-label" for="susc">Acepto la suscripción mensual</label>
+                                  </div>
+                            </form>
+                        <div class="container mt-3">
+
+                    </div>
+            
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        
+      <!-- repetir footer, buscar la forma footer.html-->  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://kit.fontawesome.com/904ed29689.js" crossorigin="anonymous"></script>
+
+</body>
+   
+</html>
